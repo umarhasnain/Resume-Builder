@@ -83,44 +83,206 @@
 
     <div class="input-wrapper">
       <div class="subInputWrapper">
+        <h6>Profile</h6>
         <!-- <label for="">Full</label> -->
         <input type="text" id="name" placeholder="Enter Your FullName" />
         <input type="text" id="job-rule" placeholder="Enter Your Job Role" />
-        <input type="text" id="objective" placeholder="Enter Your Objectiive" />
-      </div>
-      <div class="subInputWrapper">
-        <input type="text" id="phoneNumber" placeholder="Enter Your Number" />
         <input type="text" id="email" placeholder="Enter Your Email" />
-        <input
-          type="text"
-          id="websiteLink"
-          placeholder="Enter Your Website/Portfolio"
-        />
       </div>
       <div class="subInputWrapper">
+        <h6>Contact Information</h6>
+        <input type="text" id="phoneNumber" placeholder="Enter Your Number" />
         <input type="text" id="github" placeholder="Enter Your Github" />
         <input type="text" id="linkedin" placeholder="Enter Your Linkedin" />
+      </div>
+      <div class="subInputWrapper">
+        <h6>Personal Details</h6>
         <input
           type="text"
           id="websiteLink"
+          style="height: 60px; width: 250px; padding: 10px"
           placeholder="Enter Your Website/Portfolio"
         />
+        <input
+          type="text"
+          id="objective"
+          style="height: 60px; width: 250px; padding: 10px"
+          placeholder="Enter Your Objectiive"
+        />
+        <!-- <input
+          style="height: 60px; width: 250px; padding: 10px"
+          type="file"
+          id="profile-img"
+          placeholder="Enter Your Website/Portfolio"
+        /> -->
+      </div>
+      <div>
+        <div>
+          <div class="subInputWrapper">
+            <h6 for="EXPERIENCE">EXPERIENCE</h6>
+            <input
+              type="text"
+              style="height: 40px; width: 250px; padding: 10px"
+              id="expTittle"
+              placeholder="Enter Your Position Tittle"
+            />
+            <input
+              type="text"
+              style="height: 40px; width: 250px; padding: 10px"
+              id="expCompany"
+              placeholder="Enter Your Company Name"
+            />
+          </div>
+          <br />
+          <div class="subInputWrapper">
+            <label for="">Start Date</label>
+
+            <input
+              type="date"
+              style="height: 40px; width: 150px; padding: 10px"
+              id="expStartDate"
+              placeholder="Enter Your Start Date"
+            />
+            <label for="">End Date</label>
+            <input
+              type="date"
+              style="height: 40px; width: 150px; padding: 10px"
+              id="expEndDate"
+              placeholder="Enter Your Start Date"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="subInputWrapper">
+            <h6 for="EXPERIENCE">EDUCATION</h6>
+            <input
+              type="text"
+              style="height: 40px; width: 250px; padding: 10px"
+              id="eduTittle"
+              placeholder="Enter Your Degree Tittle"
+            />
+            <input
+              type="text"
+              style="height: 40px; width: 250px; padding: 10px"
+              id="edufrom"
+              placeholder="Enter Your Degree School Name"
+            />
+          </div>
+          <br />
+          <div class="subInputWrapper">
+            <label for="">Start Date</label>
+
+            <input
+              type="date"
+              style="height: 40px; width: 150px; padding: 10px"
+              id="eduStartDate"
+              placeholder="Enter Your Start Date"
+            />
+            <label for="">End Date</label>
+            <input
+              type="date"
+              style="height: 40px; width: 150px; padding: 10px"
+              id="eduEndDate"
+              placeholder="Enter Your Start Date"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="subskillWrapper">
+        <h6>Skills</h6>
+        <textarea name="" id="skillArea" placeholder="Enter Your Skills"></textarea>
+        <!-- <div class="skilWrapper">
+          <div>
+            <input  class="subInputWrapper" type="text" placeholder="Enter Your Skill" onkeydown="checkEnterKey(event)" id="todo_input">       
+          </div>
+          <div>
+            <button id="skillbtn" class="buttonClass"  onclick="addSkill()">Add Skill</button>
+
+          </div>
+        </div>
+        <div class="list_div">
+
+          <ul id="input_list" style="list-style-type: none;">
+
+          </ul> -->
+
+       
       </div>
     </div>
-    <div><button id="btn">Generate</button></div>
-    <div class="resumePreview">
-      <h2 id="showFulname">Umar</h2>
-      <h6 id="jobRole">FrontEnd Developer</h6>
+    <div id="genButton"><button id="btn">Generate Resume</button></div>
+
+    <div id="showResume" class="resumePreview">
+      <div class="text-wrapper">
+        <div>
+          <h2 id="showFulname">Umar</h2>
+          <h6 id="jobRole" style="color: #0070f0;">FrontEnd Developer</h6>
+          <p>House No L-774,Sector 5A/3 North Karachi</p>
+        </div>
+        <!-- <p id="imgShow">
+          <img
+          id="profileImg"
+            src="../../assets/imgs/resume-builder-examples.png"
+            style="height: 100px; width: 100px; border-radius: 50%"
+            alt=""
+            srcset=""
+           
+          />
+        </p> -->
+      </div>
       <div class="text-wrapper">
         <p id="showPhoneNumber">03151025098</p>
-      <p id="showEmail">umarhasnain045@gmail.com</p>
+        <p id="showEmail">umarhasnain045@gmail.com</p>
       </div>
       <div class="text-wrapper">
         <p id="showGithub">https://github.com/umarhasnain</p>
         <p id="showLinkedin">https://github.com/umarhasnain</p>
       </div>
-      <hr>
-      
+      <hr style="color: #0070f0; line-height: 50px" />
+
+      <div>
+       
+        <div class="experience-wrapper">
+          <div class="summury">
+            <h6 class="text">PROFILE</h6>
+            <p id="showObjective">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+              voluptatum!
+            </p>
+          </div>
+          <div class="child-text">
+            <h6 class="text">EXPERIENCE</h6>
+            <h5 id="showExpTittle">SMIT</h5>
+            <h6 id="showExpCompany">saylani Mass IT Training</h6>
+            <div>
+              <span id="showExpStartDate">12/09/2024</span>
+              <span id="showExpEndDate">12/09/2024</span>
+            </div>
+           </div>
+           <div class="child-text">
+            <h6 class="text">EDUCATION</h6>
+            <h5 id="showEduTittle">SMIT</h5>
+            <h6 id="showEduName">saylani Mass IT Training</h6>
+            <div>
+              <span id="showEduStartDate">12/09/2024</span>
+              <span id="showEduEndDate">12/09/2024</span>
+            </div>
+           </div>
+           <div class="child-text">
+            <h6 class="text">SKILLS</h6>
+        
+            <div class="skillList">
+              <ul id="skillList" >
+              <li>HTML</li>
+              <li>CSS</li>
+              </ul>
+            </div>
+           </div>
+        
+        </div>
+        
+      </div>
     </div>
 
     <script src="./showResume.js"></script>

@@ -5,11 +5,13 @@
 }
 
   .resumePreview{
-    height: 500px;
+    max-height: auto;
     width: 560px;
-    background-color: #0070f0;
+    background-color: whitesmoke;
+    /* background-color: #0070f0; */
     margin: 20px auto;
     padding: 40px 40px;
+    border-radius: 10px;
  
   }
 
@@ -89,7 +91,7 @@ margin: 40px;
 gap: 20px;
 }
 
-.input-wrapper input {
+.skillIn {
   width: 200px;
   height: 30px;
   padding: 5px;
@@ -104,4 +106,113 @@ gap: 20px;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.subInputWrapper input{
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-radius:10px 5px;
+  border:2px solid #0070f0;
+}
+.child-text{
+  margin-bottom: 15px;
+}
+.text{
+color: #0070f0;
+text-decoration: underline;
+}
+
+
+.skillList ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  list-style-type: none;
+}
+
+#input_div {
+  margin-top: 80px;
+  padding-top: 0px;
+  display: flex;
+  align-content: center;
+  padding-top: 70px;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 500px;
+  width: 500px;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+
+
+#btn {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: Arial;
+  padding: 10px;
+  width: auto;
+  height: 30px;
+  border-width: 1px;
+  color: #666666;
+  border-color: #dcdcdc;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  text-shadow: inset 0px 1px 0px #ffffff;
+  background: linear-gradient(#f9f9f9, #e9e9e9);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#e9e9e9, #f9f9f9);
+}
+
+
+.edit_btn1:hover {
+  background: linear-gradient(#e9e9e9, #f9f9f9);
+}
+
+#input_list {
+  padding-left: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.list_div {
+  margin-top: 20px;
+  display: flex;
+
+}
+
+.subskillWrapper{
+  
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;}
+
+.subskillWrapper textarea{
+  width: 200px;
+  height: 60px;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-radius:10px 5px;
+  border:2px solid #0070f0;
+}
+
+.skilWrapper{
+  display: flex;
+  gap: 10px;
 }
